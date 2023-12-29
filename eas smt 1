@@ -1,0 +1,287 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package eas;
+
+/**
+ *
+ * @author Hilya Zahiro
+ */
+import java.util.Scanner;
+public class Eas {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+       
+        int pesanan, jumlahmkn, jumlahmin;
+        String pesan, jawaban;
+        double totalakhirmkn, totalakhirmin, total1=0, total2=0;
+ 
+        System.out.println("Ingin memesan makanan?");
+        System.out.println("Ketik \"ya\": ");
+        pesan = input.nextLine();
+       
+        if (pesan.equalsIgnoreCase("ya")){
+            System.out.println("|===============================|");
+            System.out.println("|  WARUNG 99 SEMBILANG BANDENG  |");
+            System.out.println("|===============================|");
+            System.out.println("|     PILIHAN MENU MAKANAN      |");
+            System.out.println("|===============================|");
+            System.out.println("|   1. Sembilang      : 19000   |");
+            System.out.println("|   2. Bandeng nonduri: 19000   |");
+            System.out.println("|   3. Belut Opor     : 10000   |");
+            System.out.println("|   4. Belut Sambel   : 12000   |");
+            System.out.println("|   5. Kerengsengan   : 11000   |");
+            System.out.println("|   6. Ayam Goreng    : 9000    |");
+            System.out.println("|   7. Rawon          : 11000   |");
+            System.out.println("|   8. Tahu Tempe     : 6000    |");
+            System.out.println("|   9. Nasi Putih     : 4000    |");
+            System.out.println("|===============================|");
+        }
+            totalakhirmkn=total1;
+            System.out.println(" Pilih makanan yang ingin dipesan:");
+            System.out.println("(Sebutkan angka yang sesuai dengan menu)");
+            pesanan = input.nextInt(); 
+            System.out.println("Berapa jumlah yang ingin dipesan?");
+            jumlahmkn = input.nextInt();
+            String [] menuMakanan = {"Sembilang", "Bandeng nonduri", "Belut opor", "Belut sambel", "Kerengsengan", "Ayam goreng", "Rawon", "Tahu tempe", "Nasi putih"};
+            int [] hargaMakanan = {19000, 19000, 10000, 12000, 11000, 9000, 11000, 6000, 4000};
+            String nama_makan=null;
+            switch (pesanan) {
+                case 1: 
+                    System.out.println("Anda memesan "+menuMakanan[0]+" sebanyak "+jumlahmkn+" porsi");
+                    nama_makan="Sembilang";
+                    System.out.println("Harga per porsi = Rp "+hargaMakanan[0]+",-");
+                    total1=totalakhirmkn+(hargaMakanan[0]*jumlahmkn);
+                    System.out.println("Total = Rp "+(int)total1+",-");
+                    break;
+                case 2:
+                    System.out.println("Anda memesan "+menuMakanan[1]+" sebanyak "+jumlahmkn+" porsi");
+                    nama_makan="Bandeng nonduri";
+                    System.out.println("Harga per porsi = Rp "+hargaMakanan[1]+",-");
+                    total1=totalakhirmkn+(hargaMakanan[1]*jumlahmkn);
+                    System.out.println("Total = Rp "+(int)total1+",-");
+                    break;
+                case 3:
+                    System.out.println("Anda memesan "+menuMakanan[2]+" sebanyak "+jumlahmkn+" porsi");
+                    nama_makan="Belut opor";
+                    System.out.println("Harga per porsi = Rp "+hargaMakanan[2]+",-");
+                    total1=totalakhirmkn+(hargaMakanan[2]*jumlahmkn);
+                    System.out.println("Total = Rp "+(int)total1+",-");
+                    break;
+                case 4:
+                    System.out.println("Anda memesan "+menuMakanan[3]+" sebanyak "+jumlahmkn+" porsi");
+                    nama_makan="Belut ssambel";
+                    System.out.println("Harga per porsi = Rp "+hargaMakanan[3]+",-");
+                    total1=totalakhirmkn+(hargaMakanan[3]*jumlahmkn);
+                    System.out.println("Total = Rp "+(int)total1+",-");
+                    break;
+                case 5: 
+                    System.out.println("Anda memesan "+menuMakanan[4]+" sebanyak "+jumlahmkn+" porsi");
+                    nama_makan="Kerengsengan";
+                    System.out.println("Harga per porsi = Rp "+hargaMakanan[4]+",-");
+                    total1=totalakhirmkn+(hargaMakanan[4]*jumlahmkn);
+                    System.out.println("Total = Rp "+(int)total1+",-");
+                    break;
+                case 6: 
+                    System.out.println("Anda memesan "+menuMakanan[5]+" sebanyak "+jumlahmkn+" porsi");
+                    nama_makan="Ayam goreng";
+                    System.out.println("Harga per porsi = Rp "+hargaMakanan[5]+",-");
+                    total1=totalakhirmkn+(hargaMakanan[5]*jumlahmkn);
+                    System.out.println("Total = Rp "+(int)total1+",-");
+                    break;
+                case 7:
+                    System.out.println("Anda memesan "+menuMakanan[6]+" sebanyak "+jumlahmkn+" porsi");
+                    nama_makan="Rawon";
+                    System.out.println("Harga per porsi = Rp "+hargaMakanan[6]+",-");
+                    total1=totalakhirmkn+(hargaMakanan[6]*jumlahmkn);
+                    System.out.println("Total = Rp "+(int)total1+",-");
+                    break;
+                case 8: 
+                    System.out.println("Anda memesan "+menuMakanan[7]+" sebanyak "+jumlahmkn+" porsi");
+                    nama_makan= "Tahu tempe";
+                    System.out.println("Harga per porsi = Rp "+hargaMakanan[7]+",-");
+                    total1=totalakhirmkn+(hargaMakanan[7]*jumlahmkn);
+                    System.out.println("Total = Rp "+(int)total1+",-");
+                    break;
+                case 9: 
+                    System.out.println("Anda memesan "+menuMakanan[8]+" sebanyak "+jumlahmkn+" porsi");
+                    nama_makan="Nasi putih";
+                    System.out.println("Harga per porsi = Rp "+hargaMakanan[8]+",-");
+                    total1=totalakhirmkn+(hargaMakanan[8]*jumlahmkn);
+                    System.out.println("Total = Rp "+(int)total1+",-");
+                    break;
+                default: 
+                    System.out.println("Menu tidak tersedia");
+            }
+        
+            System.out.println("Ingin memesan minuman? \"ya\"");
+            jawaban = input.next();
+            if (pesan.equalsIgnoreCase("ya")){
+            System.out.println("|===============================|");
+            System.out.println("|  WARUNG 99 SEMBILANG BANDENG  |");
+            System.out.println("|===============================|");
+            System.out.println("|     PILIHAN MENU MINUMAN      |");
+            System.out.println("|===============================|");
+            System.out.println("|   1. Es Teh         : 4000    |");
+            System.out.println("|   2. Es Jeruk       : 5000    |");
+            System.out.println("|   3. Es Susu Soda   : 4000    |");
+            System.out.println("|   4. Es Joswa       : 4000    |");
+            System.out.println("|   5. Es Fanta       : 3000    |");
+            System.out.println("|   6. Teh            : 3000    |");
+            System.out.println("|   7. Jeruk          : 4000    |");
+            System.out.println("|   8. Jahe           : 5000    |");
+            System.out.println("|   9. Kopi           : 4000    |");
+            System.out.println("|  10. Kopi Jahe      : 7000    |");
+            System.out.println("|  11. Kopi Susu      : 6000    |");
+            System.out.println("|===============================|");    
+            } 
+            totalakhirmin=total2;
+            System.out.println(" Pilih minuman yang ingin dipesan:");
+            System.out.println("(Sebutkan angka yang sesuai dengan menu)");
+            pesanan = input.nextInt();
+            
+            System.out.println("Berapa jumlah yang ingin dipesan?");
+            jumlahmin = input.nextInt();
+            String [] menuMinuman = {"Es Teh", "Es Jeruk", "Es Susu Soda", "Es Joswa", "Es Fanta", "Teh", "Jeruk", "Jahe", "Kopi", "Kopi Jahe", "Kopi Susu"};
+            int [] hargaMinuman = {4000, 5000, 4000, 4000, 3000, 3000, 4000, 5000, 4000, 7000, 6000};
+            String nama_minum = null;
+
+            switch (pesanan) {
+                case 1: 
+                    System.out.println("Anda memesan "+menuMinuman[0]+" sebanyak "+jumlahmin+" porsi");
+                    nama_minum= "Es Teh";
+                    System.out.println("Harga per porsi = Rp "+hargaMinuman[0]+",-");
+                    total2=totalakhirmin+(hargaMinuman[0]*jumlahmin);
+                    System.out.println("Total = Rp "+(int)total2+",-");
+                    break;
+                case 2:
+                    System.out.println("Anda memesan "+menuMinuman[1]+" sebanyak "+jumlahmin+" porsi");
+                    nama_minum= "Es Jeruk";
+                    System.out.println("Harga per porsi = Rp "+hargaMinuman[1]+",-");
+                    total2=totalakhirmin+(hargaMinuman[1]*jumlahmin);
+                    System.out.println("Total = Rp "+(int)total2+",-");
+                    break;
+                case 3:
+                    System.out.println("Anda memesan "+menuMinuman[2]+" sebanyak "+jumlahmin+" porsi");
+                    nama_minum= "Es Susu Soda";
+                    System.out.println("Harga per porsi = Rp "+hargaMinuman[2]+",-");
+                    total2=totalakhirmin+(hargaMinuman[2]*jumlahmin);
+                    System.out.println("Total = Rp "+(int)total2+",-");
+                    break;
+                case 4:
+                    System.out.println("Anda memesan "+menuMinuman[3]+" sebanyak "+jumlahmin+" porsi");
+                    nama_minum= "Es Joswa";
+                    System.out.println("Harga per porsi = Rp "+hargaMinuman[3]+",-");
+                    total2=totalakhirmin+(hargaMinuman[3]*jumlahmin);
+                    System.out.println("Total = Rp "+(int)total2+",-");
+                    break;
+                case 5: 
+                    System.out.println("Anda memesan "+menuMinuman[4]+" sebanyak "+jumlahmin+" porsi");
+                    nama_minum= "Es Fanta";
+                    System.out.println("Harga per porsi = Rp "+hargaMinuman[4]+",-");
+                    total2=totalakhirmin+(hargaMinuman[4]*jumlahmin);
+                    System.out.println("Total = Rp "+(int)total2+",-");
+                    break;
+                case 6: 
+                    System.out.println("Anda memesan "+menuMinuman[5]+" sebanyak "+jumlahmin+" porsi");
+                    nama_minum= "Teh";
+                    System.out.println("Harga per porsi = Rp "+hargaMinuman[5]+",-");
+                    total2=totalakhirmin+(hargaMinuman[5]*jumlahmin);
+                    System.out.println("Total = Rp "+(int)total2+",-");
+                    break;
+                case 7:
+                    System.out.println("Anda memesan "+menuMinuman[6]+" sebanyak "+jumlahmin+" porsi");
+                    nama_minum= "Jeruk";
+                    System.out.println("Harga per porsi = Rp "+hargaMinuman[6]+",-");
+                    total2=totalakhirmin+(hargaMinuman[6]*jumlahmin);
+                    System.out.println("Total = Rp "+(int)total2+",-");
+                    break;
+                case 8: 
+                    System.out.println("Anda memesan "+menuMinuman[7]+" sebanyak "+jumlahmin+" porsi");
+                    nama_minum= "Jahe";
+                    System.out.println("Harga per porsi = Rp "+hargaMinuman[7]+",-");
+                    total2=totalakhirmin+(hargaMinuman[7]*jumlahmin);
+                    System.out.println("Total = Rp "+(int)total2+",-");
+                    break;
+                case 9: 
+                    System.out.println("Anda memesan "+menuMinuman[8]+" sebanyak "+jumlahmin+" porsi");
+                    nama_minum= "Kopi";
+                    System.out.println("Harga per porsi = Rp "+hargaMinuman[8]+",-");
+                    total2=totalakhirmin+(hargaMinuman[8]*jumlahmin);
+                    System.out.println("Total = Rp "+(int)total2+",-");
+                    break;
+                case 10:
+                    System.out.println("Anda memesan "+menuMinuman[9]+" sebanyak "+jumlahmin+" porsi");
+                    nama_minum= "Kopi Jahe";
+                    System.out.println("Harga per porsi = Rp "+hargaMinuman[9]+",-");
+                    total2=totalakhirmin+(hargaMinuman[9]*jumlahmin);
+                    System.out.println("Total = Rp "+(int)total2+",-");
+                    break;
+                case 11: 
+                    System.out.println("Anda memesan "+menuMinuman[10]+" sebanyak "+jumlahmin+" porsi");
+                    nama_minum="Kopi Susu";
+                    System.out.println("Harga per porsi = Rp "+hargaMinuman[10]+",-");
+                    total2=totalakhirmin+(hargaMinuman[10]*jumlahmin);
+                    System.out.println("Total = Rp "+(int)total2+",-");
+                    break;
+                default: 
+                    System.out.println("Menu tidak tersedia");
+            }
+            int jum_semua = (int)total1 + (int)total2;
+                
+        Scanner s = new Scanner(System.in);
+        System.out.println("Total harga: " + jum_semua);
+        System.out.println("Pilih metode pembayaran: ");
+        System.out.println("1. Tunai");
+        System.out.println("2. Debit");
+        System.out.println("3. QRIS");
+        System.out.print("Pilihan: ");
+        int metodePembayaran = input.nextInt();
+        double jumlahUang = 0;
+        double kembalian = 0;
+        switch (metodePembayaran){
+            case 1: 
+                System.out.print("Masukkan jumlah uang tunai: ");
+                jumlahUang = input.nextDouble();
+                kembalian = jumlahUang - jum_semua;
+                break;
+            case 2: 
+                System.out.print("Masukkan nomor kartu debit: ");
+                String nomorKartuDebit = input.next();
+                System.out.print("Masukkan PIN: ");
+                String pin = input.next();
+                kembalian = 0;
+                break;
+            case 3: 
+                System.out.print("Pindai QR Code: ");
+                kembalian = 0;
+                break;
+            default:
+                System.out.println("Metode pembayaran tidak valid. ");
+        }
+      
+                System.out.println("Kembalian: " + kembalian);
+                
+        System.out.println("|=================================|");
+        System.out.println("|   WARUNG 99 SEMBILANG BANDENG   |");
+        System.out.println("|=================================|");
+        System.out.println("|         DAFTAR PEMBELIAN        |");
+        System.out.println("|=================================|");
+        System.out.println("    Makanan       : " + nama_makan    );
+        System.out.println("    Jumlah Porsi  : " + jumlahmkn     );
+        System.out.println("    Minuman       : " + nama_minum    );
+        System.out.println("    Jumalah Gelas : " + jumlahmin     );
+        System.out.println("|=================================|");
+        System.out.println("    Total Harga   : Rp " + jum_semua  );
+        System.out.println("    Cash          : Rp " + jumlahUang );
+        System.out.println("    Kembalian     : Rp " + kembalian  );
+        System.out.println("|=================================|");
+        System.out.println("            TERIMKASIH            |");
+        System.out.println("     SILAHKAN DATANG KEMBALI      |");
+        System.out.println("|=================================|");
+       
+        input.close();
+    }
+}                         
+    
